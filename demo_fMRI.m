@@ -33,28 +33,28 @@ lambda = 1/sqrt(max(n1,n2)*n3);
 [Xhat_trpca,E,err,iter] = trpca_tnn(double(X),lambda,opts);
 
 %print out the relative error for tRPCA
-reldiff_trpca = norm(tensor(Xhat_trpca)-tensor(truth))/norm(tensor(truth));
+reldiff_trpca = norm(tensor(Xhat_trpca)-tensor(truth))/norm(tensor(truth))
 
 %the code for HoRPCA-C (Goldfarb and Qin, 2014)
 result_horpcac = wrapper_horpcac(tensor(X),'all_observed',[96 96 15]);
 Xhat_horpcac = result_horpcac.X;
 
 %print out the relative error for HoRPCA-C
-reldiff_horpcac = norm(tensor(Xhat_horpcac)-tensor(truth))/norm(tensor(truth));
+reldiff_horpcac = norm(tensor(Xhat_horpcac)-tensor(truth))/norm(tensor(truth))
 
 %the code for RGrad (Cai et al. 2022)
 opts.mu0 = 1;
 [Xhat_rgrad,S,time] = tRPCA_RGrad(double(X),[96 96 15],1,0.27,double(X),opts);
 
 %print out the relative error for RGrad
-reldiff_rgrad = norm(tensor(Xhat_rgrad)-tensor(truth))/norm(tensor(truth));
+reldiff_rgrad = norm(tensor(Xhat_rgrad)-tensor(truth))/norm(tensor(truth))
 
 %the code for Tucker-L2E (our method) (warning: this will take about 3-5 minutes)
 T = tucker_l2e_opt(tensor(X),[128 128 20],'maxiters',3000,'taumax',50);
 Xhat_l2e = tensor(T);
 
 %print out the relative error for Tucker-L2E
-reldiff_l2e = norm(tensor(T)-tensor(truth))/norm(tensor(truth));
+reldiff_l2e = norm(tensor(T)-tensor(truth))/norm(tensor(truth))
 
 %what happens if we use rank (128,128,20) for HoRPCA-C and RGrad?
 %result_horpcac = wrapper_horpcac(tensor(X),'all_observed',[128 128 20]);
