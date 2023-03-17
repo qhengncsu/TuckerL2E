@@ -62,7 +62,7 @@ plot(emission_scale,emission1(:,4),'LineWidth',2,'DisplayName','phenylalanine')
 hold off
 xlim([241 481])
 title('Noisy emission loadings')
-l = legend('show','Location','northeast')
+l = legend('show','Location','northeast');
 nexttile
 plot(emission_scale,emission2(:,1),'LineWidth',2)
 hold on 
