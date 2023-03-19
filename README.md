@@ -2,8 +2,10 @@
 
 Qiang Heng, Eric C. Chi, Yufeng Liu (2023). [arXiv:2208.11806](https://arxiv.org/pdf/2208.11806.pdf)
 
-Please ensure Matlab 2021a or newer is used.
-Please ensure Statistics and Machine Learning Toolbox is installed.
+Steps to get the code up and running:
+1. Download and install [Matlab 2019b](https://www.mathworks.com/products/matlab.html) or newer, assuming that you currently do not have Matlab on your machine.
+2. Install Statistics and Machine Learning Toolbox(https://www.mathworks.com/products/statistics.html).
+
 
 1. See demo_simulated_tensor.m for examples with simulated data, this corresponds to section 5.1 in the paper.
 2. See demo_fMRI.m for the tensor denoising application, this corresponds to section 6.1 in the paper.
