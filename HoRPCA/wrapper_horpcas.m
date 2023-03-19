@@ -44,9 +44,9 @@ params.lambda = params.lambdaS*r*rRatio;       %params.lambdaS*r/4;
 params.rRatio = rRatio;
 params.verbose = exist( 'verbose', 'var' ) && ~isempty(verbose) && verbose;
 params.use_cont = true;
-if ~exist( 'mode', 'var' ) || isempty(mode)
-    mode = N;
-end
+% if ~exist( 'mode', 'var' ) || isempty(mode)
+%     mode = N;
+% end
 
 %%%%%%%%%% for PROPACK %%%%%%%%%%%%
 % declare global var 'sv'

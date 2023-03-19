@@ -56,9 +56,6 @@ end
 
 %visualize the recovery results
 ranks = 5:5:45;
-t=tiledlayout(1,1, 'Padding', 'none', 'TileSpacing', 'compact'); 
-set(gcf,'Position',[100 100 640 640])
-nexttile
 line1 = plot(ranks,reldiffs_horpcac,'-sr','DisplayName','HoRPCA-C','LineWidth',1.5);
 hold on 
 line2 = plot(ranks,reldiffs_rgrad,'-x','DisplayName','RGrad','color',[0.5 0 0.8],'LineWidth',1.5);
@@ -67,5 +64,5 @@ line3 = plot(ranks,reldiffs_l2e,'-ob','DisplayName','Tucker-L2E','LineWidth',1.5
 hold off
 l = legend('show','Location','northwest')
 xlim([5 45])
-xlabel(t,'Rank');
-ylabel(t,'Relative Error');
+xlabel('Rank');
+ylabel('Relative Error');

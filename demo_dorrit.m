@@ -49,9 +49,9 @@ emission3 = M3.U{2};
 excitation3 = M3.U{3};
 emission4 = M4.U{2};
 excitation4 = M4.U{3};
-t=tiledlayout(2,4, 'Padding', 'none', 'TileSpacing', 'compact'); 
-set(gcf,'Position',[100 100 1200 600])
-nexttile
+
+set(gcf,'Position',[100 100 1440 600])
+subplot(2,4,1)
 plot(emission_scale,emission1(:,1),'LineWidth',2,'DisplayName','tryptophan')
 hold on 
 plot(emission_scale,emission1(:,3),'LineWidth',2,'DisplayName','dopa')
@@ -62,8 +62,8 @@ plot(emission_scale,emission1(:,4),'LineWidth',2,'DisplayName','phenylalanine')
 hold off
 xlim([241 481])
 title('Noisy emission loadings')
-l = legend('show','Location','northeast');
-nexttile
+l = legend('show','Location','northeast')
+subplot(2,4,2)
 plot(emission_scale,emission2(:,1),'LineWidth',2)
 hold on 
 plot(emission_scale,emission2(:,3),'LineWidth',2)
@@ -75,7 +75,7 @@ hold off
 xlim([241 481])
 title('RGrad emission loadings')
 
-nexttile
+subplot(2,4,3)
 plot(emission_scale,emission3(:,1),'LineWidth',2)
 hold on 
 plot(emission_scale,emission3(:,2),'LineWidth',2)
@@ -87,7 +87,7 @@ hold off
 xlim([241 481])
 title('HoRPCA-C emission loadings')
 
-nexttile
+subplot(2,4,4)
 plot(emission_scale,emission4(:,1),'LineWidth',2)
 hold on 
 plot(emission_scale,emission4(:,2),'LineWidth',2)
@@ -99,7 +99,7 @@ hold off
 xlim([241 481])
 title('Tucker-L2E emission loadings')
 
-nexttile
+subplot(2,4,5)
 plot(excitation_scale,excitation1(:,1),'LineWidth',2')
 hold on 
 plot(excitation_scale,excitation1(:,3),'LineWidth',2)
@@ -111,7 +111,7 @@ hold off
 xlim([230 315])
 title('Noisy excitation loadings')
 
-nexttile
+subplot(2,4,6)
 plot(excitation_scale,excitation2(:,1),'LineWidth',2)
 hold on 
 plot(excitation_scale,excitation2(:,3),'LineWidth',2)
@@ -124,7 +124,7 @@ xlim([230 315])
 ylim([-0.02 0.6])
 title('RGrad excitation loadings')
 
-nexttile
+subplot(2,4,7)
 plot(excitation_scale,excitation3(:,1),'LineWidth',2)
 hold on 
 plot(excitation_scale,excitation3(:,2),'LineWidth',2)
@@ -137,7 +137,7 @@ xlim([230 315])
 %ylim([-0.02 0.6])
 title('HoRPCA-C excitation loadings')
 
-nexttile
+subplot(2,4,8)
 plot(excitation_scale,excitation4(:,1),'LineWidth',2)
 hold on 
 plot(excitation_scale,excitation4(:,2),'LineWidth',2)
@@ -148,6 +148,6 @@ plot(excitation_scale,excitation4(:,4),'LineWidth',2)
 hold off
 xlim([230 315])
 title('Tucker-L2E excitation loadings')
-xlabel(t,'Wavelength');
-ylabel(t,'Intensity');
+xlabel('Wavelength');
+ylabel('Intensity');
 

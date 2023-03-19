@@ -1,5 +1,6 @@
 addpath('./HoRPCA/inexact_alm_rpca')
 addpath('./HoRPCA/data')
+addpath('./HoRPCA/lightspeed')
 addpath('./HoRPCA/PROPACK')
 addpath('./HoRPCA/code/rpca')
 addpath('./HoRPCA/code/tc')
@@ -67,24 +68,23 @@ reldiff_l2e = norm(tensor(T)-tensor(truth))/norm(tensor(truth))
 %in other words, they are not stable at rank (128,128,20)
 
 %visualize the recovery results
-reldiff_noisy = norm(tensor(X)-tensor(truth))/norm(tensor(truth));
-t=tiledlayout(2,3, 'Padding', 'none', 'TileSpacing', 'compact'); 
-set(gcf,'Position',[100 100 900 720])
-nexttile
+reldiff_noisy = norm(tensor(X)-tensor(truth))/norm(tensor(truth))
+set(gcf,'Position',[100 100 1200 800])
+subplot(2,3,1)
 imshow(uint16(double(truth(:,:,30))),'DisplayRange',[]);
 title('Original','FontSize',15)
-nexttile
+subplot(2,3,2)
 imshow(uint16(double(X(:,:,30))),'DisplayRange',[]);
 title(strcat('Noisy, RE=',sprintf('%.4f',reldiff_noisy)),'FontSize',15)
-nexttile
+subplot(2,3,3)
 imshow(uint16(double(Xhat_trpca(:,:,30))),'DisplayRange',[]);
 title(strcat('tRPCA, RE=',sprintf('%.4f',reldiff_trpca)),'FontSize',15)
-nexttile
+subplot(2,3,4)
 imshow(uint16(double(Xhat_horpcac(:,:,30))),'DisplayRange',[]);
 title(strcat('HoRPCA-C, RE=',sprintf('%.4f',reldiff_horpcac)),'FontSize',15)
-nexttile
+subplot(2,3,5)
 imshow(uint16(double(Xhat_rgrad(:,:,30))),'DisplayRange',[]);
 title(strcat('RGrad, RE=',sprintf('%.4f',reldiff_rgrad)),'FontSize',15)
-nexttile
+subplot(2,3,6)
 imshow(uint16(double(Xhat_l2e(:,:,30))),'DisplayRange',[]);
 title(strcat('Tucker-L2E, RE=',sprintf('%.4f',reldiff_l2e)),'FontSize',15)

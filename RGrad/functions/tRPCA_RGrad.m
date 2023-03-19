@@ -43,7 +43,7 @@ if isfield(opts, 'verbose');     verbose = opts.verbose;      end
 %% initialization 
 [T,C,U,UT,~,~] = hosvd(A,r); % use HOSVD as initialization
 % [T,C,U,UT] = initialization(A,r);
-S = threshold(T,gamma,alpha,A); 
+S = mythreshold(T,gamma,alpha,A); 
 if exist_Ttrue
     init_err = norm(T(:) - Ttrue(:))/norm(Ttrue(:));
 %     fprintf('Initialization rel. err.: %f\n', init_err);
@@ -56,7 +56,7 @@ for i = 1:maxit
     [G,~,V] = mani_proj(G,C,U,UT);
     [T,C,U,UT] = my_hosvd(C,U,UT,beta*G,V);        
     T = trimtensor(T,mu0);
-    S = threshold(T,gamma,alpha,A); 
+    S = mythreshold(T,gamma,alpha,A); 
     if verbose && exist_Ttrue && (mod(i,10)==0 || i == 1)
         disp(['iter:', num2str(i),', rel err.:',num2str(norm(T(:) - Ttrue(:))/norm(Ttrue(:)))])
     end

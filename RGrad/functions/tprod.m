@@ -16,7 +16,7 @@ function T = tprod(S, U)
 % TODO: longer U ->  expand
 
 T = S;
-siz = size(S,1,2,3);
+siz = size(S);
 for i = 1:length(U)
 	if ~isempty(U{i})
 		siz(i) = size(U{i},1);
