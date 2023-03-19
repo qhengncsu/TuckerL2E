@@ -13,6 +13,7 @@ Steps to get the code up and running (step 1 and 2 can be skipped if you already
 5. Download [L-BFGS-B implementation by Stephen Becker](https://github.com/stephenbeckr/L-BFGS-B-C), unzip the file and place the folder in this repository such that we can access its contents with the relative path "./TuckerL2E/L-BFGS-B-C" (Again, if you download as zip from github, the folder name will be "L-BFGS-B-C-master", we first have to rename the folder to lose the "-master").
 6. Navigate to "./TuckerL2E/L-BFGS-B-C/Matlab" and run the script "compile_mex.m" within Matlab. This will you help compile the mex files provided.
 
+## Example Scripts
 Now you are ready to try out the scripts!
 
 1. See demo_simulated_tensor.m for examples with simulated data, this corresponds to section 5.1 in the paper.
