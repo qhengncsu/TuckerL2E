@@ -34,4 +34,4 @@ We have written several customized wrappers "twg_horpcas.m", "twg_rpca.m", "wrap
 
 We placed a function "wshift.m" in the functions subfolder to eliminate the dependency on the Signal Processing Toolbox. We have renamed the "threshold" funciton to "mythreshold" to avoid a name conflict with the Econometrics Toolbox. The syntax for the size function in the function "tprod" is also changed to make the code excutable on earlier versions of Matlab.
 
--[tRPCA](https://github.com/canyilu/Tensor-Robust-Principal-Component-Analysis-TRPCA) (Lu, Canyi, et al. "Tensor robust principal component analysis with a new tensor nuclear norm." IEEE transactions on pattern analysis and machine intelligence 42.4 (2019): 925-938.)
+- [tRPCA](https://github.com/canyilu/Tensor-Robust-Principal-Component-Analysis-TRPCA) (Lu, Canyi, et al. "Tensor robust principal component analysis with a new tensor nuclear norm." IEEE transactions on pattern analysis and machine intelligence 42.4 (2019): 925-938.)
