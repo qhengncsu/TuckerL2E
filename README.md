@@ -6,14 +6,14 @@ This repository is maintained by Qiang Heng (qheng@ncsu.edu).
 ## Dependencies
 - [Matlab 2019b](https://www.mathworks.com/products/matlab.html) or newer
 - [Statistics and Machine Learning Toolbox](https://www.mathworks.com/products/statistics.html)
-- This repo is also dependent on [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org/) and the [L-BFGS-B implementation by Stephen Becker](https://github.com/stephenbeckr/L-BFGS-B-C), which has been included in the folder "./TuckerL2E". The "hosvd" function in the tensor toolbox has been renamed to "hosvd_tt" to avoid a name conflict.
+- This repo is also dependent on [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org/) and the [L-BFGS-B implementation by Stephen Becker](https://github.com/stephenbeckr/L-BFGS-B-C), which has been included in the folder "TuckerL2E/TuckerL2E". The "hosvd" function in the tensor toolbox has been renamed to "hosvd_tt" to avoid a name conflict.
 
 ## Comipling the mex files
 After downloading and unzipping this repo, you will also need to compile the mex files for [L-BFGS-B](https://github.com/stephenbeckr/L-BFGS-B-C) before you attempt to run the scripts.
 
 1. For Windows users, please install "MATLAB Support for MinGW-w64 C/C++ Compiler" using the Add-on Explorer within Matlab.
 2. For Mac users, please ensure Xcode is installed and functional.
-3. Navigate to "./TuckerL2E/L-BFGS-B-C/Matlab" and run the script "compile_mex.m" within Matlab (The working directory of Matlab should be "./TuckerL2E/L-BFGS-B-C/Matlab"). 
+3. Navigate to "TuckerL2E/TuckerL2E/L-BFGS-B-C/Matlab" and run the script "compile_mex.m" within Matlab (The working directory of Matlab should be "TuckerL2E/TuckerL2E/L-BFGS-B-C/Matlab"). 
 
 ## Example Scripts
 Now you are ready to try out the scripts!
