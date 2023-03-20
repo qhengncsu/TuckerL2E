@@ -15,8 +15,8 @@ Steps to get the code up and running (step 1 and 2 can be skipped if you already
 
 ## Comipling the mex files
 1. For Windows users, please install "MATLAB Support for MinGW-w64 C/C++ Compiler" using the Add-on Explorer within Matlab.
-2. For Mac users, please ensure you have Xcode installed.
-3. For Linux users, the binary files included should be directly usable and you can skip step 4, if not, go to step 4.
+2. For Mac users, please ensure Xcode is installed and functional.
+3. For Linux users, the binary files included should in general be directly usable. If not, go to step 4.
 4. Navigate to "./TuckerL2E/L-BFGS-B-C/Matlab" and run the script "compile_mex.m" within Matlab (The working directory of Matlab should be "./TuckerL2E/L-BFGS-B-C/Matlab"). 
 
 ## Example Scripts
@@ -26,4 +26,4 @@ Now you are ready to try out the scripts!
 2. "generate_figure_6.m" this will help you recreate Figure 6 in the paper. 
 3. "generate_figure_8.m" this will help you recreate Figure 8 in the paper. 
 
-"generate_figure_8.m" will run relatively fast, "generate_figure_6.m" will take about 5-10 minutes.
+"generate_figure_8.m" will run relatively fast, "generate_figure_6.m" will take about 5-10 minutes, "generate_figure_2.m" will take about 15-25 minutes.
