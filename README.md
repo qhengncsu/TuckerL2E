@@ -13,8 +13,7 @@ After downloading and unzipping this repo, you will also need to compile the mex
 
 1. For Windows users, please install "MATLAB Support for MinGW-w64 C/C++ Compiler" using the Add-on Explorer within Matlab.
 2. For Mac users, please ensure Xcode is installed and functional.
-3. For Linux users, the binary files included should in general be directly usable. If not, go to step 4.
-4. Navigate to "./TuckerL2E/L-BFGS-B-C/Matlab" and run the script "compile_mex.m" within Matlab (The working directory of Matlab should be "./TuckerL2E/L-BFGS-B-C/Matlab"). 
+3. Navigate to "./TuckerL2E/L-BFGS-B-C/Matlab" and run the script "compile_mex.m" within Matlab (The working directory of Matlab should be "./TuckerL2E/L-BFGS-B-C/Matlab"). 
 
 ## Example Scripts
 Now you are ready to try out the scripts!
