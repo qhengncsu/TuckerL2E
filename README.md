@@ -24,3 +24,8 @@ Now you are ready to try out the scripts!
 3. "generate_figure_8.m" this will help you recreate Figure 8 in the paper. 
 
 "generate_figure_8.m" will run relatively fast, "generate_figure_6.m" will take about 5-10 minutes, "generate_figure_2.m" will take about 15-25 minutes.
+
+## Code from other sources
+This repository also contains code for 
+- HoRPCA (Goldfarb, Donald, and Zhiwei Qin. "Robust low-rank tensor recovery: Models and algorithms." SIAM Journal on Matrix Analysis and Applications 35.1 (2014): 225-253.)
+In particular, we have written several customized wrappers "twg_horpcas.m", "twg_rpca.m", "wrapper_horpcac.m", "wrapper_horpcas.m", "wrapper_rpca.m"
