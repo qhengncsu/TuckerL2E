@@ -14,6 +14,7 @@ The following steps are needed to set up the folder correctly:
 5. Download [L-BFGS-B implementation by Stephen Becker](https://github.com/stephenbeckr/L-BFGS-B-C), unzip the file and place the folder in this repository such that we can access its contents with the relative path "./TuckerL2E/L-BFGS-B-C" (Again, if you download as zip from github, the folder name will be "L-BFGS-B-C-master", we first have to rename the folder to lose the "-master").
 
 ## Comipling the mex files
+The [L-BFGS-B implementation by Stephen Becker](https://github.com/stephenbeckr/L-BFGS-B-C) requires compilation!
 1. For Windows users, please install "MATLAB Support for MinGW-w64 C/C++ Compiler" using the Add-on Explorer within Matlab.
 2. For Mac users, please ensure Xcode is installed and functional.
 3. For Linux users, the binary files included should in general be directly usable. If not, go to step 4.
