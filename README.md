@@ -18,9 +18,9 @@ After downloading and unzipping this repo, you will also need to compile the mex
 ## Example Scripts
 Now you are ready to try out the scripts!
 
-1. "generate_figure_2.m" this will help you recreate the fourth subplot of Figure 2 in the paper (using only one random replicate). 
-2. "generate_figure_6.m" this will help you recreate Figure 6 in the paper. 
-3. "generate_figure_8.m" this will help you recreate Figure 8 in the paper. 
+1. "generate_figure_2.m" will help you recreate the fourth subplot of Figure 2 in the paper (using only one random replicate). 
+2. "generate_figure_6.m" will help you recreate Figure 6 in the paper. 
+3. "generate_figure_8.m" will help you recreate Figure 8 in the paper. 
 
 "generate_figure_8.m" will run relatively fast, "generate_figure_6.m" will take about 5-10 minutes, "generate_figure_2.m" will take about 15-25 minutes.
 
