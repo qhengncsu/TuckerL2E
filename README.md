@@ -12,7 +12,12 @@ Steps to get the code up and running (step 1 and 2 can be skipped if you already
 3. Download this repository and unzip it to somewhere you like (If you downloaded this repo as zip file from github, the folder name will be "TuckerL2E-master", we first have to rename the folder to "TuckerL2E").
 4. Download [tensor_toolbox-v3.2.1](https://gitlab.com/tensors/tensor_toolbox/-/releases/v3.2.1), unzip the file and place the folder in this repository such that we can access its contents with the relative path "./TuckerL2E/tensor_toolbox-v3.2.1". An example absolute path would be "C:/Users/Qiang/Desktop/TuckerL2E/TuckerL2E/tensor_toolbox-v3.2.1".
 5. Download [L-BFGS-B implementation by Stephen Becker](https://github.com/stephenbeckr/L-BFGS-B-C), unzip the file and place the folder in this repository such that we can access its contents with the relative path "./TuckerL2E/L-BFGS-B-C" (Again, if you download as zip from github, the folder name will be "L-BFGS-B-C-master", we first have to rename the folder to lose the "-master").
-6. Navigate to "./TuckerL2E/L-BFGS-B-C/Matlab" and run the script "compile_mex.m" within Matlab (The working directory of Matlab should be "./TuckerL2E/L-BFGS-B-C/Matlab", if you double-click "compile_mex.m", the setting of working directory is automatically achieved). This will you help compile the mex files provided.
+
+## Comipling the mex files
+i. For Windows users, please install "MATLAB Support for MinGW-w64 C/C++ Compiler" using the Add-on Explorer within Matlab.
+ii. For Mac users, please ensure you have Xcode installed.
+iii. For Linux users, the binary files included should be directly usable.
+iv. For Windows and Mac users, navigate to "./TuckerL2E/L-BFGS-B-C/Matlab" and run the script "compile_mex.m" within Matlab (The working directory of Matlab should be "./TuckerL2E/L-BFGS-B-C/Matlab"). 
 
 ## Example Scripts
 Now you are ready to try out the scripts!
