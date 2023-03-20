@@ -11,7 +11,7 @@ The following steps are needed to set up the folder correctly:
 2. Install [Statistics and Machine Learning Toolbox](https://www.mathworks.com/products/statistics.html).
 3. Download this repository and unzip it to somewhere you like (If you downloaded this repo as zip file from github, the folder name will be "TuckerL2E-master", we first have to rename the folder to "TuckerL2E").
 4. Download [tensor_toolbox-v3.2.1](https://gitlab.com/tensors/tensor_toolbox/-/releases/v3.2.1), unzip the file and place the folder in this repository such that we can access its contents with the relative path "./TuckerL2E/tensor_toolbox-v3.2.1". An example absolute path would be "C:/Users/Qiang/Desktop/TuckerL2E/TuckerL2E/tensor_toolbox-v3.2.1".
-5. Download [L-BFGS-B implementation by Stephen Becker](https://github.com/stephenbeckr/L-BFGS-B-C), unzip the file and place the folder in this repository such that we can access its contents with the relative path "./TuckerL2E/L-BFGS-B-C" (Again, if you download as zip from github, the folder name will be "L-BFGS-B-C-master", we first have to rename the folder to lose the "-master").
+5. Download [L-BFGS-B implementation by Stephen Becker](https://github.com/stephenbeckr/L-BFGS-B-C), unzip the file and place the folder in this repository such that we can access its contents with the relative path "./TuckerL2E/L-BFGS-B-C" (Again, if you download as zip from github, the folder name will be "L-BFGS-B-C-master", we first have to rename the folder to lose the "-master"). An example absolute path would be "C:/Users/Qiang/Desktop/TuckerL2E/TuckerL2E/L-BFGS-B-C".
 
 ## Comipling the mex files
 The [L-BFGS-B implementation by Stephen Becker](https://github.com/stephenbeckr/L-BFGS-B-C) requires compilation!
