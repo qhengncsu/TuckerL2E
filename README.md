@@ -6,7 +6,7 @@ This repository is maintained by Qiang Heng (qheng@ncsu.edu).
 ## Dependencies
 This repo is dependent on [Tensor Toolbox for MATLAB](https://www.tensortoolbox.org/) and the [L-BFGS-B implementation by Stephen Becker](https://github.com/stephenbeckr/L-BFGS-B-C).
 
-Steps to get the code up and running (step 1 and 2 can be skipped if you already have them):
+The following steps are needed to set up the folder correctly:
 1. Download and install [Matlab 2019b](https://www.mathworks.com/products/matlab.html) or newer.
 2. Install [Statistics and Machine Learning Toolbox](https://www.mathworks.com/products/statistics.html).
 3. Download this repository and unzip it to somewhere you like (If you downloaded this repo as zip file from github, the folder name will be "TuckerL2E-master", we first have to rename the folder to "TuckerL2E").
