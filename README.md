@@ -5,7 +5,7 @@ This repository is maintained by Qiang Heng (qheng@ncsu.edu).
 
 ## Dependencies
 - [Matlab 2019b](https://www.mathworks.com/products/matlab.html) or newer
-- [Statistics and Machine Learning Toolbox](https://www.mathworks.com/products/statistics.html), which needs to be installed with the Add-on Explorer.
+- [Statistics and Machine Learning Toolbox](https://www.mathworks.com/products/statistics.html), which needs to be installed with the Add-on Explorer within Matlab.
 - This repo is also dependent on [Tensor Toolbox for MATLAB v3.2.1](https://www.tensortoolbox.org/) and the [L-BFGS-B implementation by Stephen Becker](https://github.com/stephenbeckr/L-BFGS-B-C), which has been included in "[folder name]/TuckerL2E" (no action is needed on your end). The "hosvd" function in the tensor toolbox has been renamed to "hosvd_tt" to avoid a name conflict.
 
 ## Comipling the mex files
