@@ -26,7 +26,7 @@ Now you are ready to try out the scripts!
 "generate_figure_8.m" will run relatively fast, "generate_figure_6.m" will take about 5-10 minutes, "generate_figure_2.m" will take about 15-25 minutes.
 
 ## Code from other sources
-This repository also contains code from the following sources with some of our own modifications. The references and modifications are documented as following: 
+This repository also contains code from the following sources with some of our own modifications. The orignal sources and modifications are documented as following: 
 - [HoRPCA](https://onedrive.live.com/?authkey=%21AOPu2g59n7NqZBI&id=731BCE806DD1BE58%216666&cid=731BCE806DD1BE58&parId=root&parQt=sharedby&o=OneUp) (Goldfarb, Donald, and Zhiwei Qin. "Robust low-rank tensor recovery: Models and algorithms." SIAM Journal on Matrix Analysis and Applications 35.1 (2014): 225-253.)
 
 We have written several customized wrappers "twg_horpcas.m", "twg_rpca.m", "wrapper_horpcac.m", "wrapper_horpcas.m", "wrapper_rpca.m" to make it easier to invoke the respective methods.
