@@ -8,7 +8,7 @@ This repository is maintained by Qiang Heng (qheng@ncsu.edu).
 - [Statistics and Machine Learning Toolbox](https://www.mathworks.com/products/statistics.html), which needs to be installed with the Add-on Explorer within Matlab.
 - This repo is also dependent on [Tensor Toolbox for MATLAB v3.2.1](https://www.tensortoolbox.org/) and the [L-BFGS-B implementation by Stephen Becker](https://github.com/stephenbeckr/L-BFGS-B-C), which has been included in "[folder name]/TuckerL2E" (no action is needed on your end). The "hosvd" function in the tensor toolbox has been renamed to "hosvd_tt" to avoid a name conflict.
 
-## Comipling the mex files
+## Compiling the mex files
 After downloading and unzipping this repo, you will also need to compile the mex files for [L-BFGS-B](https://github.com/stephenbeckr/L-BFGS-B-C) before you attempt to run the scripts.
 
 1. For Windows users, please install "MATLAB Support for MinGW-w64 C/C++ Compiler" using the Add-on Explorer within Matlab.
