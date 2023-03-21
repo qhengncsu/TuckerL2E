@@ -51,7 +51,7 @@ opts.mu0 = 1;
 reldiff_rgrad = norm(tensor(Xhat_rgrad)-tensor(truth))/norm(tensor(truth))
 
 %the code for Tucker-L2E (our method) (warning: this will take about 3-5 minutes)
-T = tucker_l2e_opt(tensor(X),[128 128 20],'maxiters',3000,'taumax',50);
+T = tucker_l2e_opt(tensor(X),[128 128 20],'maxiters',5000,'taumax',50);
 Xhat_l2e = tensor(T);
 
 %print out the relative error for Tucker-L2E

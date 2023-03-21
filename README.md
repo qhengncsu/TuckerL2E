@@ -23,7 +23,7 @@ Now you are ready to try out the scripts!
 2. "generate_figure_6.m" will help you recreate Figure 6 in the paper. 
 3. "generate_figure_8.m" will help you recreate Figure 8 in the paper. 
 
-"generate_figure_8.m" will run relatively fast, "generate_figure_6.m" will take about 5-10 minutes, "generate_figure_2.m" will take about 15-25 minutes.
+"generate_figure_8.m" will run relatively fast, "generate_figure_6.m" will take about 10-15 minutes, "generate_figure_2.m" will take about 15-25 minutes.
 
 ## Code from other sources
 This repository also contains code from the following sources with some of our own modifications. The orignal sources and modifications are documented as following: 
