@@ -17,11 +17,11 @@ After downloading and unzipping this repo, you will also need to compile the mex
 4. Navigate to "[folder name]/TuckerL2E/L-BFGS-B-C/Matlab" and run the script "compile_mex.m" within Matlab (The working directory of Matlab should be "[folder name]/TuckerL2E/L-BFGS-B-C/Matlab"). 
 
 ## Example Scripts
-Now you are ready to try out the scripts!
+Now you are ready to try out the scripts! (Remember to swith the working directory back to the parent folder after step 4)
 
-1. "generate_figure_2.m" will help you recreate the fourth subplot of Figure 2 in the paper (using only one random replicate). 
-2. "generate_figure_6.m" will help you recreate Figure 6 in the paper. 
-3. "generate_figure_8.m" will help you recreate Figure 8 in the paper. 
+5. "generate_figure_2.m" will help you recreate the fourth subplot of Figure 2 in the paper (using only one random replicate). 
+6. "generate_figure_6.m" will help you recreate Figure 6 in the paper. 
+7. "generate_figure_8.m" will help you recreate Figure 8 in the paper. 
 
 "generate_figure_8.m" will run relatively fast, "generate_figure_6.m" will take about 10-15 minutes, "generate_figure_2.m" will take about 15-25 minutes.
 
