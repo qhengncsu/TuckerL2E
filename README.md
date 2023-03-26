@@ -27,7 +27,7 @@ Now you are ready to try out the scripts! (Remember to swith the working directo
 9. "generate_figure_6.m" will help you recreate Figure 6 in the paper. 
 10. "generate_figure_8.m" will help you recreate Figure 8 in the paper. 
 
-"generate_figure_8.m" will run relatively fast, "generate_figure_6.m" will take about 10-15 minutes, each one of "generate_figure_2_subplot_[i].m" will take about 15-25 minutes if the number of replicate "N" is set to 1. Notice that in the paper, Figure 2 is generated with 50 random replicates. However, one random replicate is enough to generate a figure that is similar to Figure 2. 
+"generate_figure_8.m" will run relatively fast, "generate_figure_6.m" will take about 10-15 minutes, each one of "generate_figure_2_subplot_[i].m" will take about 15-25 minutes if the number of replicate "N" is set to 1. Notice that in the paper, Figure 2 is generated with 50 random replicates. However, one random replicate is enough to generate a figure that appears similar to Figure 2. 
 
 ## Code from other sources
 This repository also contains code from the following sources with some of our own modifications. The orignal sources and modifications are documented as following: 
