@@ -14,6 +14,7 @@ Steps to get the code up and running:
 
 ## Compiling the mex files
 The [L-BFGS-B](https://github.com/stephenbeckr/L-BFGS-B-C) repo requires compilation! Thus you must follow the following steps to compile the mex files:
+
 4. For Windows users, please install "MATLAB Support for MinGW-w64 C/C++ Compiler" using the Add-on Explorer within Matlab.
 5. For Mac users, please ensure Xcode is installed and functional.
 6. For Linux users, our experience has been that the binary files provided are typically directly usable and you can skip compilation. But if that is not the case, make sure GCC compiler is installed (most linux distributions have GCC pre-installed) and go to step 4.
