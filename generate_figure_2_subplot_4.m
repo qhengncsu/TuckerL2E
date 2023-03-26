@@ -20,7 +20,7 @@ reldiffs_rgrad = zeros(9,N);
 reldiffs_l2e = zeros(9,N);
 for j=1:N
     for i=1:9
-        rng(i*50+j,'philox')
+        rng(i*50+j+1,'philox')
         %generate a tensor with Tucker rank (5i,5i,5i) (i=1,2,3,...,9)
         X = randn([50 50 50]);
         [truth,~,~,~,~,~] = hosvd(X,[5*i 5*i 5*i]);
