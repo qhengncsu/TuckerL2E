@@ -19,7 +19,7 @@ reldiffs_horpcac = zeros(9,N);
 reldiffs_rgrad = zeros(9,N);
 reldiffs_l2e = zeros(9,N);
 for j=1:N
-    rng('philox',j)
+    rng(j,'philox')
     for i=1:9
         %generate a tensor with Tucker rank (5i,5i,5i) (i=1,2,3,...,9)
         X = randn([50 50 50]);

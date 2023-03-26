@@ -22,7 +22,7 @@ reldiffs_horpcac = zeros(9,N);
 reldiffs_rgrad = zeros(9,N);
 reldiffs_l2e = zeros(9,N);
 for j=1:N
-    rng('philox',j)
+    rng(j,'philox')
     for i=1:9
         %generate a tensor with CP rank (5i,5i,5i) (i=1,2,3,...,9)
         info = create_problem('Type', 'CP', 'Size',[50 50 50],'Num_Factors',5*i,'Noise', 0.0,'M',0.0,'Factor_Generator','randn');
