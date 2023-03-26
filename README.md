@@ -6,22 +6,25 @@ This repository is maintained by Qiang Heng (qheng@ncsu.edu).
 ## Dependencies
 - [Matlab 2019b](https://www.mathworks.com/products/matlab.html) or newer
 - [Statistics and Machine Learning Toolbox](https://www.mathworks.com/products/statistics.html), which needs to be installed with the Add-on Explorer within Matlab.
-- This repo is also dependent on [Tensor Toolbox for MATLAB v3.2.1](https://www.tensortoolbox.org/) and the [L-BFGS-B implementation by Stephen Becker](https://github.com/stephenbeckr/L-BFGS-B-C), which has been included in "[folder name]/TuckerL2E" (no action is needed on your end). The "hosvd" function in the tensor toolbox has been renamed to "hosvd_tt" to avoid a name conflict.
+
+Steps to get the code up and running:
+1. Install [Tensor Toolbox for MATLAB v3.2.1](https://gitlab.com/tensors/tensor_toolbox/-/releases/v3.2.1). Please download the zip file (tensor_toolbox-v3.2.1.zip) and unzip it. Then please place the folder at "[folder name]/TuckerL2E/tensor_toolbox-v3.2.1". We should be able to access the folder's contents with the relative path "./TuckerL2E/tensor_toolbox-v3.2.1".
+2. Please rename the "hosvd.m" function inside "[folder name]/TuckerL2E/tensor_toolbox-v3.2.1" to "hosvd_tt.m". The function name written inside "hosvd_tt.m" must be changed as well. In other words, the first line of "hosvd_tt.m" should now be "function T = hosvd_tt(X,tol,varargin)".
+3. Download as zip the github rep [L-BFGS-B](https://github.com/stephenbeckr/L-BFGS-B-C). Unzip the zip file. Notice that the folder name will be "L-BFGS-B-C-master". Please rename the folder to "L-BFGS-B-C" and place the folder at "[folder name]/TuckerL2E/L-BFGS-B-C". We should be able to access the folder's contents with the relative path "./TuckerL2E/L-BFGS-B-C".
 
 ## Compiling the mex files
-After downloading and unzipping this repo, you will also need to compile the mex files for [L-BFGS-B](https://github.com/stephenbeckr/L-BFGS-B-C) before you attempt to run the scripts.
-
-1. For Windows users, please install "MATLAB Support for MinGW-w64 C/C++ Compiler" using the Add-on Explorer within Matlab.
-2. For Mac users, please ensure Xcode is installed and functional.
-3. For Linux users, our experience has been that the binary files provided are typically directly usable and you can skip compilation. But if that is not the case, make sure GCC compiler is installed (most linux distributions have GCC pre-installed) and go to step 4.
-4. Navigate to "[folder name]/TuckerL2E/L-BFGS-B-C/Matlab" and run the script "compile_mex.m" within Matlab (The working directory of Matlab should be "[folder name]/TuckerL2E/L-BFGS-B-C/Matlab"). 
+The [L-BFGS-B](https://github.com/stephenbeckr/L-BFGS-B-C) repo requires compilation! Thus you must follow the following steps to compile the mex files:
+4. For Windows users, please install "MATLAB Support for MinGW-w64 C/C++ Compiler" using the Add-on Explorer within Matlab.
+5. For Mac users, please ensure Xcode is installed and functional.
+6. For Linux users, our experience has been that the binary files provided are typically directly usable and you can skip compilation. But if that is not the case, make sure GCC compiler is installed (most linux distributions have GCC pre-installed) and go to step 4.
+7. Navigate to "[folder name]/TuckerL2E/L-BFGS-B-C/Matlab" and run the script "compile_mex.m" within Matlab (The working directory of Matlab should be "[folder name]/TuckerL2E/L-BFGS-B-C/Matlab"). 
 
 ## Example Scripts
 Now you are ready to try out the scripts! (Remember to swith the working directory back to the respository folder after step 4)
 
-5. "generate_figure_2_subplot_[i].m" (i=1,2,3,4) will help you recreate the four subplots of Figure 2 in the paper (using only one random replicate). 
-6. "generate_figure_6.m" will help you recreate Figure 6 in the paper. 
-7. "generate_figure_8.m" will help you recreate Figure 8 in the paper. 
+8. "generate_figure_2_subplot_[i].m" (i=1,2,3,4) will help you recreate the four subplots of Figure 2 in the paper (using only one random replicate). 
+9. "generate_figure_6.m" will help you recreate Figure 6 in the paper. 
+10. "generate_figure_8.m" will help you recreate Figure 8 in the paper. 
 
 "generate_figure_8.m" will run relatively fast, "generate_figure_6.m" will take about 10-15 minutes, each one of "generate_figure_2_subplot_[i].m" will take about 15-25 minutes.
 
