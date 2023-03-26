@@ -17,7 +17,7 @@ The [L-BFGS-B-C](https://github.com/stephenbeckr/L-BFGS-B-C) repo requires compi
 
 4. For Windows users, please install "MATLAB Support for MinGW-w64 C/C++ Compiler" using the Add-on Explorer within Matlab.
 5. For Mac users, please ensure Xcode is installed and functional.
-6. Make sure GCC compiler is installed (most linux distributions have GCC pre-installed) and go to step 4.
+6. For Linux users, make sure GCC compiler is installed (most linux distributions have GCC pre-installed) and go to step 4.
 7. Navigate to "[path of repo]/TuckerL2E/L-BFGS-B-C/Matlab" and run the script "compile_mex.m" within Matlab (The working directory of Matlab should be "[path of repo]/TuckerL2E/L-BFGS-B-C/Matlab"). 
 
 ## Example Scripts
