@@ -11,7 +11,7 @@ addpath('./TuckerL2E/L-BFGS-B-C/Matlab')
 addpath('./TuckerL2E/tensor_toolbox-v3.2.1')
 addpath('./RGrad')
 addpath('./RGrad/functions')
-addpath('./Tensor-Robust-Principal-Component-Analysis-TRPCA')
+addpath('./TRPCA')
 %note: all parameters are already tuned for optimal performance
 %load in fMRI data (128*128*50)
 load fMRI.mat;
