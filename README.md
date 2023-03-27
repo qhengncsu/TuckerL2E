@@ -22,7 +22,7 @@ The [L-BFGS-B-C](https://github.com/stephenbeckr/L-BFGS-B-C) repo requires compi
 7. Navigate to "[path of repo]/TuckerL2E/L-BFGS-B-C/Matlab" and run the script "compile_mex.m" within Matlab (The working directory of Matlab should be "[path of repo]/TuckerL2E/L-BFGS-B-C/Matlab"). 
 
 ## Example scripts
-Now you are ready to try out the scripts! (Remember to swith the working directory back to [path of repo] after step 7)
+Now you are ready to try out the scripts! (Remember to switch the working directory back to [path of repo] after step 7)
 
 8. "generate_figure_2_subplot_[i].m" (i=1,2,3,4) will help you recreate the four subplots of Figure 2 in the paper. 
 9. "generate_figure_6.m" will help you recreate Figure 6 in the paper. 
