@@ -9,7 +9,7 @@ This repository is maintained by Qiang Heng (qheng@ncsu.edu).
 
 Steps to get the code up and running:
 1. Install [Tensor Toolbox for MATLAB v3.2.1](https://gitlab.com/tensors/tensor_toolbox/-/releases/v3.2.1). Please download the zip file [Source code (zip)](https://gitlab.com/tensors/tensor_toolbox/-/archive/v3.2.1/tensor_toolbox-v3.2.1.zip) and unzip it. Then please place the folder at "[path of repo]/TuckerL2E/tensor_toolbox-v3.2.1". An example absolute path on my machine is "C:/Users/Qiang/Documents/TuckerL2E/TuckerL2E/tensor_toolbox-v3.2.1", where "C:/Users/Qiang/Documents/TuckerL2E" is the path for this repo. 
-2. ==Please rename the "hosvd.m" function inside "[path of repo]/TuckerL2E/tensor_toolbox-v3.2.1" to "hosvd_tt.m". The function name written inside "hosvd_tt.m" must be changed as well. In other words, the first line of "hosvd_tt.m" should now be "function T = hosvd_tt(X,tol,varargin)"==.
+2. <span style="color:red">some Please rename the "hosvd.m" function inside "[path of repo]/TuckerL2E/tensor_toolbox-v3.2.1" to "hosvd_tt.m". The function name written inside "hosvd_tt.m" must be changed as well. In other words, the first line of "hosvd_tt.m" should now be "function T = hosvd_tt(X,tol,varargin)". text</span> 
 3. Download as zip the github repo [L-BFGS-B-C](https://github.com/stephenbeckr/L-BFGS-B-C). Unzip the zip file. Notice that the folder name will be "L-BFGS-B-C-master" after being downloaded from github. Please rename the folder to "L-BFGS-B-C" and place the folder at "[path of repo]/TuckerL2E/L-BFGS-B-C". An example absolute path on my machine is "C:/Users/Qiang/Documents/TuckerL2E/TuckerL2E/L-BFGS-B-C".
 
 ## Compiling the mex files
