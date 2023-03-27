@@ -37,7 +37,7 @@ We have written several customized wrappers "twg_horpcas.m", "twg_rpca.m", "wrap
 
 - [BRTF](https://github.com/qbzhao/BRTF) (Zhao, Qibin, et al. "Bayesian robust tensor factorization for incomplete multiway data." IEEE transactions on neural networks and learning systems 27.4 (2015): 736-748.)
 
-We only include the software portions of the repo. The demo files and the videos in [BRTF](https://github.com/qbzhao/BRTF) are not included. 
+The videos in [BRTF](https://github.com/qbzhao/BRTF) are not included to save space. 
 
 - [RGrad](https://www.tandfonline.com/doi/suppl/10.1080/01621459.2022.2063131?scroll=top&role=tab) (Cai, Jian-Feng, Jingyang Li, and Dong Xia. "Generalized low-rank plus sparse tensor estimation by fast Riemannian optimization." Journal of the American Statistical Association (2022): 1-17.)
 
