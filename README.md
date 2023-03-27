@@ -44,3 +44,5 @@ We only include the software portions of the repo. The demo files and the videos
 We placed a function "wshift.m" in the "functions" subfolder to eliminate the dependency on the Wavelet Toolbox. We have renamed the "threshold" funciton to "mythreshold" to avoid a name conflict with the Econometrics Toolbox. The syntax for the size function in the function "tprod" is also changed to make the code excutable on earlier versions of Matlab.
 
 - [tRPCA](https://github.com/canyilu/Tensor-Robust-Principal-Component-Analysis-TRPCA) (Lu, Canyi, et al. "Tensor robust principal component analysis with a new tensor nuclear norm." IEEE transactions on pattern analysis and machine intelligence 42.4 (2019): 925-938.)
+
+"tprod.m" is renamed to "tprod_trpca.m" to avoid a name conflict with the software of [RGrad](https://www.tandfonline.com/doi/suppl/10.1080/01621459.2022.2063131?scroll=top&role=tab).
