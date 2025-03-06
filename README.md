@@ -1,8 +1,8 @@
 # Code for  "Robust Low-rank Tensor Decomposition with the L2 Criterion"
 
-Qiang Heng, Eric C. Chi, Yufeng Liu (2023). *Technometrics, in press.* doi: [10.1080/00401706.2023.2200541](https://www.tandfonline.com/doi/abs/10.1080/00401706.2023.2200541)
+Qiang Heng, Eric C. Chi, Yufeng Liu. *Technometrics 65.4 (2023): 537-552* doi: [10.1080/00401706.2023.2200541](https://www.tandfonline.com/doi/abs/10.1080/00401706.2023.2200541)
 
-This repository is maintained by Qiang Heng (qheng@ncsu.edu).
+This repository is maintained by Qiang Heng (heng.qiang6@gmail.com).
 
 
 ## Dependencies
